@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/** Resets **/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/** HERO **/
+.hero {
+    background-color: white;
+    width: 100vw;
+    background: black url('../images/arthdal\ chronicles.jpg') no-repeat center;
+    background-size: cover;
+    padding: 2rem 1.5rem 5rem;
+}
+
+/** top bar **/
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    
+
+    @media (min-width: 40rem) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    width: 180px;
+}
+
+.movie-search {
+    width: 17rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: .9rem;
+}
+
+.movie-search:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, .3);
+    border: 2px solid red;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Young Serif', serif;
+    margin-bottom: 1rem;
+}
+
+.movie-info {
+    margin-block: 2rem;
+
+    @media (min-width: 40rem) {
+        margin: 7rem 2rem 3rem;
+    }
+}
+
+.movie-description {
+    font-size: 1rem;
+    max-width: 30rem;
+}
+
+.trailer-button {
+    background-color: red;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    width: fit-content;
+    margin-block: 1rem;
+    border-radius: 8px;
+    border: 2px solid red;
+}
+
+.trailer-button:hover {
+    background-color: transparent;
+    color: black;
+}
